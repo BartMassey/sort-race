@@ -7,7 +7,7 @@ a PHP implementation of [Quicksort](https://en.wikipedia.org/wiki/Quicksort) (`q
 wrote my own
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) in
 C (`bubblesort.c`) and comparable Rust (`bubblesort.rs`) so I could race
-'em in response to a [Reddit thread](). Each implementation
+'em in response to a [Reddit thread](https://www.reddit.com/r/rust/comments/bsthz6/as_a_backend_developer_how_rust_can_help_me_at_my/eosnd6o/). Each implementation
 creates an array of the first *n* integers, shuffles it, and
 then sorts it back.
 
