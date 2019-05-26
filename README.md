@@ -10,15 +10,15 @@ C (`bubblesort.c`) and comparable Rust (`bubblesort.rs`) so I could race
 'em in response to a
 [Reddit thread](https://www.reddit.com/r/rust/comments/bsthz6/as_a_backend_developer_how_rust_can_help_me_at_my/eosnd6o/);
 (I also wrote a PHP Bubble Sort (`bubblesort.php`) just out
-of curiosity: it runs about 100× slower than PHP Quicksort.)
+of curiosity: it runs about 30× slower than PHP Quicksort.)
 Each implementation of Bubble Sort
 creates an array of the first *n* integers, shuffles it, and
 then sorts it back.
 
-Turns out the breakeven on my box is about 10,000 elements:
+Turns out the breakeven on my box is about 5,000 elements:
 that is the size at which the PHP Quicksort, the C Bubble
 Sort compiled with GCC and the Rust Bubble Sort take about
-0.05 seconds. The output of the
+0.012 seconds on my box. The output of the
 [benchmark run](benchmark.txt) shows compiler/interpreter
 versions and timing.
 
