@@ -1,7 +1,14 @@
 #!/usr/bin/php
+# Copyright (c) 2019 Bart Massey
+# [This program is licensed under the "MIT License"]
+# Please see the file LICENSE in the source
+# distribution of this software for license terms.
+
+# Portions of this code taken from
+# https://www.codexpedia.com/php/quick-sort-implementation-in-php/
+
 <?php
 
-# https://www.codexpedia.com/php/quick-sort-implementation-in-php/
 
 $n = $argv[1] + 0;
 
