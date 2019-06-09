@@ -22,6 +22,14 @@ Sort compiled with GCC and the Rust Bubble Sort take about
 [benchmark run](benchmarks.txt) shows compiler/interpreter
 versions and timing.
 
+I timed both the simple and in-place PHP Quicksort: at this
+size they both run in about the same time. This suggests
+that PHP's startup overhead is a limiting factor: I wrote a
+Rust Quicksort transliterated directly from the PHP in-place
+quicksort, and raced them on 1M elements to get a fairer
+speed comparison. At this scale PHP is about 8× slower than
+Rust for Quicksort, which is actually pretty impressive.
+
 C Bubble Sort compiled with Clang is about twice as fast: I
 suspect it has figured out that it doesn't have to do the
 whole sort since it only is printing the first element. Meh.
@@ -30,6 +38,7 @@ The standalone Rust Bubble Sort was a pain, since the Rust
 Standard Library apparently has no built-in random-number
 support. This was super-annoying: I currently require an
 extra "seed" argument to this program.
+
 
 # License
 

@@ -1,9 +1,12 @@
-TARGETS = bubblesort-rs bubblesort-c-gcc bubblesort-c-clang
+TARGETS = bubblesort-rs quicksort-rs bubblesort-c-gcc bubblesort-c-clang
 
 all: $(TARGETS)
 
 bubblesort-rs: bubblesort.rs
 	rustc -O -o bubblesort-rs bubblesort.rs
+
+quicksort-rs: quicksort.rs
+	rustc -O -o quicksort-rs quicksort.rs
 
 bubblesort-c-gcc: bubblesort.c
 	gcc -O4 -o bubblesort-c-gcc bubblesort.c
