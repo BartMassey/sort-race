@@ -19,7 +19,7 @@ Turns out the breakeven on my box is about 5,000 elements:
 that is the size at which the PHP Quicksort, the C Bubble
 Sort compiled with GCC and the Rust Bubble Sort take about
 0.012 seconds on my box. The output of the
-[benchmark run](benchmark.txt) shows compiler/interpreter
+[benchmark run](benchmarks.txt) shows compiler/interpreter
 versions and timing.
 
 C Bubble Sort compiled with Clang is about twice as fast: I
